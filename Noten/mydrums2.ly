@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.22.0"
 
 % http://lilypond.org/doc/v2.19/Documentation/snippets/percussion
 

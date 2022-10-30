@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.22.0"
 
 \include "dynamicparams.ly"
 \include "formatangaben.ly"
@@ -9,7 +9,7 @@
 \include "mydrums2.ly"
 \include "drumdefinitions.ly"
 
-tempTranspose = #(define-music-function (parser location music)
+tempTranspose = #(define-music-function (music)
                    (ly:music?)
                    (let* ((octave (or (ly:get-option 'octave) -1))
                           (note (or (ly:get-option 'note) 0))
@@ -23,7 +23,8 @@ mBreak = { }
 globalSeiStilleDemHerrnMendelssohn = {
   \key c\major
   \time 4/4
-  \accidentalStyle PianoStaff
+  \accidentalStyle piano
+  \taktstil
 }
 
 ablaufzeileSeiStilleDemHerrnMendelssohn = { }
@@ -304,7 +305,7 @@ metronomZeileSeiStilleDemHerrnMendelssohn = \drummode {
 }
 \include "defSeiStilleDemHerrnMendelssohn.ly"
 
-%{Arbeitspartitur
+%***Arbeitspartitur
 #(set-global-staff-size 17)
 \book {
   \bookOutputName "SeiStilleDemHerrnMendelssohn-Arbeitspartitur"
@@ -342,4 +343,4 @@ metronomZeileSeiStilleDemHerrnMendelssohn = \drummode {
     \scoreSeiStilleDemHerrnMendelssohn
   }
 }
-Arbeitspartitur%}
+%Arbeitspartitur***

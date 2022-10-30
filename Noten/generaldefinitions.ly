@@ -1,6 +1,6 @@
-\version "2.18.2"
+\version "2.22.0"
 
-tempTranspose = #(define-music-function (parser location music)
+tempTranspose = #(define-music-function (music)
                    (ly:music?)
                    (let* ((octave (or (ly:get-option 'octave) -1))
                           (note (or (ly:get-option 'note) 0))
@@ -8,7 +8,7 @@ tempTranspose = #(define-music-function (parser location music)
                           (to (ly:make-pitch octave note alteration)))
                      #{ \transpose c c  $music #}))
 
-stichnoten = #(define-music-function (parser location music)
+stichnoten = #(define-music-function (music)
                 (ly:music?)
                 (let* (
                         (bote (or (ly:get-option 'bote) 0))

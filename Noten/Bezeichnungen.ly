@@ -1,8 +1,8 @@
-\version "2.18.2"
+\version "2.22.0"
 
-komponist = \markup { Felix Mendelssohn Bartholdy }
+komponist = \markup { Felix Mendelssohn Bartholdy (1809–1847) }
 widmung = \markup {  }
-arrangeur = \markup { S: Martin Wadsack 2019 }
+arrangeur = \markup { }
 untertitel = \markup {  }
 herausgeber = \markup {  }
 titel = \markup { Sei stille dem Herrn }
