@@ -135,8 +135,8 @@ klavierRHStimmeISeiStilleDemHerrnMendelssohn = \optionalTranspose \tempTranspose
   c8[ \change Staff = "2"  <e, g>8 ] s4 \change Staff = "1"
   \oneVoice r8 <g' g'>8 <c c'>4 ~ | % 29
   <c c'>4 r4 r8 <g g'>8 <c c'>4 ~ | \barNumberCheck #30
-  <c c'>4 g4. f8 [ es8 d8 ] | % 31
-  <a c d>2 r2 | % 32
+  <c c'>4 \voiceOne g4. f8 [ es8 d8 ] | % 31
+  <a c d>2 \oneVoice r2 | % 32
   \voiceTwo <c e>2 d2 | % 33
   c8 [ e8 ~ <e g>8 <e g>8~ ] <e g>4 s2. %b''16 [ c16 d16 c16 ~ ] c4
 
